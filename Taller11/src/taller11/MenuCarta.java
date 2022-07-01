@@ -7,7 +7,7 @@ public class MenuCarta extends Menu{
     private double valorporciondeGuarnicion;
     
     
-    public MenuCarta(){
+    public MenuCarta(String[] datos001){
         
     }
     public MenuCarta(String nombrePl, double valorinicialM,double valorPG, double valorB){
@@ -51,7 +51,7 @@ public class MenuCarta extends Menu{
 
     @Override
     public String toString() {
-        String cadena=String.format("Menu a la carta\n%s",super.toString());
+        String cadena=String.format("Menu carta\n%s",super.toString());
         cadena=String.format("%s"
                 + "Valor porcion guarnicion:%.2f\n"
                 + "Valor bebida:%.2f\n"
